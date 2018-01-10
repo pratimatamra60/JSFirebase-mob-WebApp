@@ -1,0 +1,25 @@
+{
+  "name": "module3_pratima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "npm-run-all --parallel dev:css dev:server",
+    "dev:css": "node-sass -w public/scss/style.scss public/css/style.css",
+    "dev:server": "firebase serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratimatamra60/mod3_pratima.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratimatamra60/mod3_pratima/issues"
+  },
+  "homepage": "https://github.com/pratimatamra60/mod3_pratima#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2"
+  }
+}
