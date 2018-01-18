@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html manifest="cache.appcache">
 
-    <link rel="stylesheet" type="text/css" href="css/css/bootstrap.min.css">
+<head>
+    <meta charset="utf-8">
+    <title>NYSL</title>
+
+    <!-- for having an app icon on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" sizes="128x128" href="img/nysl_logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="img/nysl_logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/nysl_logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/nysl_logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/nysl_logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    
+
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="">
+
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/4.8.1/firebase-app.js"></script>
@@ -18,19 +39,310 @@
     <script defer src="/__/firebase/4.8.1/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
+</head>
 
-   
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body data-json="teams_info.json">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navtop">
+            <div>
+                <img src="img/nysl_logo.png" alt="logo" class="logo">
+            </div>
+            <div>
+                <a class="navbar-brand center" href="#">NYSL</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="hamburger collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link home-btn" href="#">
+                            <i class="material-icons"> home </i> 
+                            <span>Home</span> 
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link news-btn" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link match-btn" href="#"><i class="material-icons">local_play</i> Matches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link team-btn" href="#team-list"><i class="material-icons">group</i>Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gallery-btn" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact" class="nav-link" href="#contact-page"><i class="material-icons">contact_phone</i> Contact </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="statistic" class="nav-link stat-btn" href="#"><i class="material-icons">settings</i> Statistic Table </a>
+                    </li>
+                    <li class="nav-item">
+                            <a id="setting" class="nav-link setting-btn" href="#"><i class="material-icons">settings_applications</i> Settings </a>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+        <nav class="navbar-bottom navbar-expand-lg navbar fixed-bottom w3-text-white">
+            <i class="material-icons home-btn">home</i>    
+            <i class="material-icons fav-btn">stars</i>
+            <i class="material-icons match-btn">local_play</i>
+            <i class="material-icons team-btn">group</i>
+        </nav>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!--    
+ -->
+    <div class="main-body">
+        <section id="section-news" class="home-page">
+            <div id="event" class="carousel slide" data-ride="false">
+                <ul class="carousel-indicators">
+                    <li data-target="#event" data-slide-to="0" class="active"></li>
+                    <li data-target="#event" data-slide-to="1"></li>
+                    <li data-target="#event" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id ="detail" class=" d-block w-100" src="img/bb.jpg" alt="news1" >
+                        <div class="carousel-caption news-background">
+                            <h3><strong>NYSL Training</strong></h3>
+                            <p>Season Kick-off: Meet the Teams</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img id ="detail" class=" d-block w-100" src="img/bb.jpg" alt="news2" >
+                        <div class="carousel-caption news-background">
+                            <h3><strong>Match Cancellation</strong></h3>
+                            <p>Due to the bad weather this match has been cancelled</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img  id ="detail" class=" d-block w-100" src="img/bb.jpg" alt="news3">
+                        <div class="carousel-caption news-background">
+                            <h3><strong>August 5, 2018</strong></h3>
+                            <p>NYSL Fundraiser</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#event" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#event" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+    
+        <section id="section-matches" class="home-page">
+            <div id="match" class="carousel" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                            <div class="caption">
+                                    <h4>TUE, 12.05.2018  14:25  <i class="material-icons">location_on</i></h4>
+                                    <p> <img class="text-center team-list-logo" src="img/fake.png" alt="cas">Team A __ : __ Team B <img class="team-list-logo" src="img/center.png" alt="cas"></p>
+                                </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="caption">
+                                    <h4>SUN, 12.05.2018  12:30  <i class="material-icons">location_on</i></h4>
+                                    <p><img class="text-center team-list-logo" src="img/download.jpg" alt="cas">Team C __ : __ Team D <img class="team-list-logo" src="img/cas_logo.png" alt="cas"></p>
+                                </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="caption ">
+                                    <h4>MON, 12.05.2018  10:25  <i class="material-icons">location_on</i></h4>
+                                    <p> <img class="text-center team-list-logo" src="img/cas_logo.png" alt="cas"> Team A <span> </span> __ : __ <span> </span>Team D <img class="team-list-logo" src="img/us.png" alt=""> </p>
+                            </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#match" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#match" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+        </section>
 
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js" ></script>
-  </body>
+        <section id="gallery" class="home-page">
+            <img class="image" src="img/design2_image1.jpg" alt="">
+        </section>
+
+         <section class="team-list hidden-page">
+                <h3 class="text-center" ><strong>Team</strong></h3>
+        <!-- ################TABLE################# -->
+          <table id="teamsTable" class="table table-hover">
+                <!-- <thead>
+                    <tr>
+                        <th><h3 class="text-center" ><strong>Team</strong></h3></th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                </tbody>
+            </table> 
+        </section>   
+            <!-- <section id="teams_list">
+                <h3 class="text-center">Team List</h3>
+                <div class="container">
+                    <div class="row">
+                        <div data-value="U1" class="col text-center team-name">
+                            <img class="logo" alt="logo" src="img/us.png">
+                            <br>U1</div>
+                        <div data-value="U2" class="col text-center team-name">
+                            <img class="logo" alt="logo" src="img/fake.png">
+                            <br>U2</div>
+                        
+                    </div>
+                    <div class="row">
+                        <div data-value="U3" class="col text-center team-name">
+                            <img class="logo" alt="logo" src="img/download.jpg">
+                            <br>U3</div>
+                        <div data-value="U4" class="col text-center team-name">
+                            <img class="logo" alt="logo" src="img/center.png">
+                            <br>U4</div>   
+                    </div>
+                    <div class="row">
+                        <div data-value="U5" class="col text-center team-name">
+                            <img class="logo" alt="logo" src="img/warriors_badge.jpg">
+                            <br>U5</div>
+                        <div data-value="U6" class="col text-center">
+                            <img class="logo" alt="logo" src="img/cas_logo.png">
+                            <br>U6</div>   
+                    </div>
+                </div>
+            </section> -->
+        <section id="team-details" class="container text-center hidden-page">
+            <h3>Team Info</h3>
+        <!--<img alt="logo" id="team-logo" src=""> --> 
+           <div id="detail-info" class="list-group"></div>           
+        </section>
+    
+
+        <section id="match-list" class="hidden-page" >
+                <h3 class="text-center"><strong>Upcoming Games</strong></h3>
+            <div class="each-match row">
+                <div class="col text-center">
+                    <img class="team-list-logo" src="img/cas_logo.png" alt="">
+                </div>
+                <div class="col text-center">
+                    <p>25.12.2018 10:30
+                    <br>
+                    <a href="https://www.google.de/maps/place/Howard+A.+Yeager+School+(PREK-K)/@42.3154422,-87.8560698,17z/data=!4m12!1m6!3m5!1s0x880feccac26b07c5:0x8b51fa5d6efe771a!2sHoward+A.+Yeager+School+(PREK-K)!8m2!3d42.3154383!4d-87.8538811!3m4!1s0x880feccac26b07c5:0x8b51fa5d6efe771a!8m2!3d42.3154383!4d-87.8538811">AJ Katzenmaier</a> </p>
+                </div>
+                <div class="col text-center">
+                        <img class="team-list-logo" src="img/us.png" alt=""> 
+                </div>
+            </div>
+            <hr>
+            <div class="each-match2 row">
+                    <div class="col text-center">
+                        <img class="team-list-logo" src="img/fake.png" alt="">
+                    </div>
+                    <div class="col text-center">
+                            <p>25.12.2018 10:30
+                            <br>
+                                    <a href="https://www.google.de/maps/place/Howard+A.+Yeager+School+(PREK-K)/@42.3154422,-87.8560698,17z/data=!4m12!1m6!3m5!1s0x880feccac26b07c5:0x8b51fa5d6efe771a!2sHoward+A.+Yeager+School+(PREK-K)!8m2!3d42.3154383!4d-87.8538811!3m4!1s0x880feccac26b07c5:0x8b51fa5d6efe771a!8m2!3d42.3154383!4d-87.8538811">Marjorie P Hart</a> </p>   
+                    </div>
+                    <div class="col text-center">
+                            <img class="team-list-logo" src="img/warriors_badge.jpg" alt=""> 
+                    </div>
+                </div>
+                <hr>
+                <div class="each-match row">
+                        <div class="col text-center">
+                            <img class="team-list-logo" src="img/center.png" alt="">
+                        </div>
+                        <div class="col text-center">
+                                <p>25.12.2018 10:30
+                                <br>
+                                        <a href="https://www.google.de/maps/place/Howard+A.+Yeager+School+(PREK-K)/@42.3154422,-87.8560698,17z/data=!4m12!1m6!3m5!1s0x880feccac26b07c5:0x8b51fa5d6efe771a!2sHoward+A.+Yeager+School+(PREK-K)!8m2!3d42.3154383!4d-87.8538811!3m4!1s0x880feccac26b07c5:0x8b51fa5d6efe771a!8m2!3d42.3154383!4d-87.8538811">Howard A Yeager School</a> </p>  
+                        </div>
+                        <div class="col text-center">
+                                <img class="team-list-logo" src="img/download.jpg" alt=""> 
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="each-match2 row">
+                            <div class="col text-center">
+                                <img class="team-list-logo" src="img/us.png" alt="">
+                            </div>
+                            <div class="col text-center">
+                                    <p>25.12.2018 10:30
+                                    <br>
+                                            <a href="https://www.google.de/maps/place/Howard+A.+Yeager+School+(PREK-K)/@42.3154422,-87.8560698,17z/data=!4m12!1m6!3m5!1s0x880feccac26b07c5:0x8b51fa5d6efe771a!2sHoward+A.+Yeager+School+(PREK-K)!8m2!3d42.3154383!4d-87.8538811!3m4!1s0x880feccac26b07c5:0x8b51fa5d6efe771a!8m2!3d42.3154383!4d-87.8538811">Greenbay</a> </p>  
+                            </div>
+                            <div class="col text-center">
+                                    <img class="team-list-logo" src="img/fake.png" alt=""> 
+                            </div>
+                        </div>
+                        <hr>
+        </section>
+
+        <section class="hidden-page" id="statistic-table">
+            <h3 class="text-center"><strong>Statistic Table</strong></h3>
+    <!-- ################TABLE################# -->
+      <table id="stat-Table" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>Pos</th>
+                    <th>Games</th>
+                    <th>Pt.</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table> 
+    </section>   
+
+        <section id="contact-page"class="text-center hidden-page" >
+            <content>
+                  <div class="text-center">
+                        <h2> <b>Let's Get In Touch!</b></h2>
+                  </div>     
+                    <div class="row">
+                        <div class="col ml-auto text-center">
+                          <p>Phone: 0176-0000-0009</p>
+                        </div>    
+                         
+                        <div class="col mr-auto text-center">
+                          <p> Email:
+                            <a href="mailto:your-email@your-domain.com">abc0@gmail.com</a>
+                          </p>
+                        </div>    
+                    </div> 
+            
+                
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Full Name:</label>
+                      <input type="name" class="form-control" id="name">
+                      <label for="number">Phone Number:</label>
+                      <input type="number" class="form-control" id="number">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="text">Message:</label>
+                      <input type="text" class="form-control" id="text">
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+            </form>              
+        </content>
+        <footer class="blockquote-footer text-center transparent-box">Copyright © Your Website 2017</footer>
+    </section>
+       
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,66 @@
+.navtop {
+  background-color: #00251a;
+  border-bottom: 2px;
+  border-bottom-color: #004d40; }
+
+body {
+  overflow-x: hidden; }
+
+a.nav-link {
+  line-height: 20px; }
+  a.nav-link span, a.nav-link i {
+    display: inline-block;
+    vertical-align: middle; }
+
+.logo {
+  top: 8px;
+  left: 12px;
+  height: 40px;
+  margin-right: 10px; }
+
+.team-logo {
+  height: 150px; }
+
+.main-body {
+  margin-top: 55px; }
+
+.carousel-caption {
+  bottom: 1px; }
+
+.team-list-logo {
+  height: 40px;
+  margin: 0 5px; }
+
+.navbar-bottom {
+  background-color: #004d40; }
+
+section {
+  margin: 2px; }
+
+#match.carousel {
+  background-color: #39796b;
+  position: relative;
+  width: 100%;
+  height: 150px; }
+
+.hidden-page {
+  display: none; }
+
+.team-info-logo {
+  height: 100%;
+  margin: 0 9px;
+  width: 100%; }
+
+.caption {
+  text-align: center;
+  color: #fff;
+  margin: 30px;
+  padding: 10px;
+  /* p{
+		white-space: nowrap;
+	}
+ */ }
+
+.image {
+  width: 100%;
+  height: 100%; }

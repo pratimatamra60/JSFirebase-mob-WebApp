@@ -1,74 +1,41 @@
-[debug] [2018-01-10T14:26:41.402Z] ----------------------------------------------------------------------
-[debug] [2018-01-10T14:26:41.402Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Pratima\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-01-10T14:26:41.402Z] CLI Version:   3.16.0
-[debug] [2018-01-10T14:26:41.402Z] Platform:      win32
-[debug] [2018-01-10T14:26:41.402Z] Node Version:  v8.9.1
-[debug] [2018-01-10T14:26:41.402Z] Time:          Wed Jan 10 2018 15:26:41 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T14:26:41.402Z] ----------------------------------------------------------------------
+[debug] [2018-01-18T09:39:11.329Z] ----------------------------------------------------------------------
+[debug] [2018-01-18T09:39:11.329Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Pratima\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-01-18T09:39:11.329Z] CLI Version:   3.16.0
+[debug] [2018-01-18T09:39:11.329Z] Platform:      win32
+[debug] [2018-01-18T09:39:11.329Z] Node Version:  v8.9.1
+[debug] [2018-01-18T09:39:11.329Z] Time:          Thu Jan 18 2018 10:39:11 GMT+0100 (W. Europe Standard Time)
+[debug] [2018-01-18T09:39:11.329Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-01-10T14:26:41.433Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-01-10T14:26:41.433Z] > authorizing via signed-in user
-[debug] [2018-01-10T14:26:41.433Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-01-10T14:26:41.433Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2018-01-18T09:39:11.394Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-18T09:39:11.395Z] > authorizing via signed-in user
+[debug] [2018-01-18T09:39:11.400Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-18T09:39:11.401Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  { refresh_token: '1/26iD0BSTVB0R-p7Teh7cTfHlKdvlKJ6BsrexWcSr0Koht4JCfj_kTgsXmmJEIXQd',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Wed Jan 10 2018 15:26:41 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T14:26:41.855Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-10T14:26:41.871Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nysl-pratima  
+ Thu Jan 18 2018 10:39:11 GMT+0100 (W. Europe Standard Time)
+[debug] [2018-01-18T09:39:11.809Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-18T09:39:11.809Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nysl-pratima  
   
- Wed Jan 10 2018 15:26:41 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T14:26:42.673Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-10T14:26:42.673Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nysl-pratima/tokens  
+ Thu Jan 18 2018 10:39:11 GMT+0100 (W. Europe Standard Time)
+[debug] [2018-01-18T09:39:12.648Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-18T09:39:12.648Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nysl-pratima/tokens  
   
- Wed Jan 10 2018 15:26:42 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T14:26:43.485Z] <<< HTTP RESPONSE 200
+ Thu Jan 18 2018 10:39:12 GMT+0100 (W. Europe Standard Time)
+[debug] [2018-01-18T09:39:13.289Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'C:\Users\Pratima\desktop\module3_pratima'...
+[info] === Serving from 'C:\Users\Pratima\Desktop\module3_pratima'...
 [info] 
-[debug] [2018-01-10T14:26:43.501Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-pratima  
+[debug] [2018-01-18T09:39:13.306Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-pratima  
   
- Wed Jan 10 2018 15:26:43 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T14:26:44.586Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-10T14:26:44.602Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1016881430781/clients/_:getWebAppConfig  
+ Thu Jan 18 2018 10:39:13 GMT+0100 (W. Europe Standard Time)
+[debug] [2018-01-18T09:39:14.554Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-18T09:39:14.557Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1016881430781/clients/_:getWebAppConfig  
   
- Wed Jan 10 2018 15:26:44 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T14:26:45.274Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[info] Shutting down...
-[debug] [2018-01-10T15:07:11.972Z] ----------------------------------------------------------------------
-[debug] [2018-01-10T15:07:11.972Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Pratima\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-01-10T15:07:11.972Z] CLI Version:   3.16.0
-[debug] [2018-01-10T15:07:11.972Z] Platform:      win32
-[debug] [2018-01-10T15:07:11.972Z] Node Version:  v8.9.1
-[debug] [2018-01-10T15:07:11.972Z] Time:          Wed Jan 10 2018 16:07:11 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T15:07:11.972Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-01-10T15:07:12.037Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-01-10T15:07:12.038Z] > authorizing via signed-in user
-[debug] [2018-01-10T15:07:12.044Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nysl-pratima  
-  
- Wed Jan 10 2018 16:07:12 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T15:07:12.917Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-10T15:07:12.918Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nysl-pratima/tokens  
-  
- Wed Jan 10 2018 16:07:12 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T15:07:13.576Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\Pratima\desktop\module3_pratima'...
-[info] 
-[debug] [2018-01-10T15:07:13.592Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-pratima  
-  
- Wed Jan 10 2018 16:07:13 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T15:07:14.944Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-10T15:07:14.944Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1016881430781/clients/_:getWebAppConfig  
-  
- Wed Jan 10 2018 16:07:14 GMT+0100 (W. Europe Standard Time)
-[debug] [2018-01-10T15:07:15.807Z] <<< HTTP RESPONSE 200
+ Thu Jan 18 2018 10:39:14 GMT+0100 (W. Europe Standard Time)
+[debug] [2018-01-18T09:39:15.368Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 
